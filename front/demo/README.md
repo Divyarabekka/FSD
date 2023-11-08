@@ -1,8 +1,7 @@
 
-
-run cmd : npm start
-
-
+Login Page:
+            email :"divya@gmail",
+             password :"divyaraja"
 
 
 
