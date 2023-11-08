@@ -3,7 +3,6 @@ import dotenv from "dotenv"
 import cors from "cors"
 import { dataBaseConection } from "./db.js";
 import { userRouter } from "./routes/user.js";
-import { notesRouter } from "./routes/notes.js";
 import { isAuthorized } from "./middlewares/auth.js";
 
 dotenv.config()
