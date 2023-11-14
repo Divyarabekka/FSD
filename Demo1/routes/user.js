@@ -1,6 +1,5 @@
 import express from "express";
 import bcrypt from "bcrypt";
-
 import { generateToken, getUserByEmail } from "../controllers/user.js";
 import { User } from "../models/user.js";
 
@@ -53,7 +52,7 @@ router.post("/signup", async(req,res) =>{
      password:hasedPassword
  }) .save();
 
- //generate tiken and give response
+ //generate token and give response
  const token = generateToken(user._id);
  res.status(201).json({
   message:"successfully signup",
