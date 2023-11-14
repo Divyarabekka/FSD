@@ -21,7 +21,7 @@ app.get("/", (req,res) => {
 
 
 app.use("/api/user",userRouter);
-app.use("/api/notes",isAuthorized ,notesRouter);
+
 
 app.listen(PORT, () => {
     console.log(`server running loclahost ${PORT}`);
