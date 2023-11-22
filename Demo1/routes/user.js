@@ -63,4 +63,17 @@ router.post("/signup", async(req,res) =>{
     res.status(500).json({error : "internal server error"});
   }  
 })
+
+
+router.get("/users", async (req, res) => {
+  try {
+    const users = await User.find({}, "-password"); // Exclude the password field from the response
+    res.status(200).json(users);
+  } catch (error) {
+    console.log(error);
+    res.status(500).json({ error: "Internal server error" });
+  }
+});
+
+
 export const userRouter = router;
