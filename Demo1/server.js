@@ -19,6 +19,10 @@ app.get("/", (req,res) => {
 });
 
 app.use("/api/user",userRouter);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 2f873b14ef94cb59e620f3b8246363b70874ec11
 
 app.listen(PORT, () => {
     console.log(`server running loclahost ${PORT}`);
